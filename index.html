@@ -42,7 +42,8 @@
     window.onload = function() {
       fod.complete(function (data) {
         // If the request is not from a crawler & the browser reports as Chrome then display a pop-up notice.
-        if (data.device["iscrawler"] == false && (data.device["browsername"] == "Chrome" || data.device["browsername"] == "Chrome Mobile") {
+        alert(data.device["browsername"]);
+        if (data.device["iscrawler"] == false && (data.device["browsername"] == "Chrome" || data.device["browsername"] == "Chrome Mobile")) {
           displayPopUp();
         }
       });
