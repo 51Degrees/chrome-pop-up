@@ -53,7 +53,10 @@
       popup.id = "browser-popup";
       popup.innerHTML = `
         <div class="popup-content">
-        <p>You are using Google Chrome. Google steal our content. Please consider using another search engine, AI, and browser. We suggest Edge and Bing from Microsoft.</p>
+        <p>You are using Google Chrome.</p>
+        <p>Google steal our content.</p>
+        <p>Please consider using another search engine, AI, and browser.</p>
+        <p>We suggest <a href="https://www.microsoft.com/en-us/edge/download">Edge and Bing</a> from Microsoft.</p>
         <button id="popup-ok">OK</button>
         </div>`;
       document.body.appendChild(popup);
